@@ -1,4 +1,4 @@
-# TacocaTCore.v2
- TacocaT written in C# using a model
+# The TacocaT challenge...but written in C#
+## And uses a model
 
 Check out my [portfolio](https://www.ejdevspot.com/)
