@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Code";
+}
+
+<div class="row">
+    <div class="col text-center">
+        <h1>The Code</h1>
+    </div>
+</div><br />
+<div class="row">
+    <div class="col">
+        <h4>The following code is displayed using PrismJS</h4>
+    </div>   
+</div>
+<hr />
+<br />
+<div class="row">
+    <div class="col">
+        <pre>
+<code class="language-js line-numbers">[HttpPost]
+    public IActionResult Solve(string userWord)
+    {
+        var tacocatModel = new TacocaT();
+        tacocatModel.UserWord = userWord;
+
+        tacocatModel.Output = string.Join("", userWord.Reverse().ToArray());
+        return RedirectToAction("Result", tacocatModel);
+    }
+
+    public IActionResult Result(TacocaT model)
+    {
+        return View(model);
+    }
+
+</code>
+</pre>
+    </div>
+</div>
+
